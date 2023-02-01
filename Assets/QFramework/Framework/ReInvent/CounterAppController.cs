@@ -12,11 +12,17 @@ public class CounterAppController : MonoBehaviour
         private Button mBtnSub;
         private Text mCounterTxt;
 
-		#endregion
+        #endregion
 
+        #region model
+        private int mCount=0;
+		#endregion
 		// Start is called before the first frame update
 		void Start()
     {
+            mBtnAdd = transform.Find("BtnAdd").GetComponent<Button>();
+            mBtnSub=transform.Find("BtnSub").GetComponent<Button>();
+            mCounterTxt=transform.Find("CountTxt").GetComponent<Text>();
         
     }
 
