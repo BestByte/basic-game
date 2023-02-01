@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,11 +24,22 @@ public class CounterAppController : MonoBehaviour
             mBtnAdd = transform.Find("BtnAdd").GetComponent<Button>();
             mBtnSub=transform.Find("BtnSub").GetComponent<Button>();
             mCounterTxt=transform.Find("CountTxt").GetComponent<Text>();
+
+            mBtnAdd.onClick.AddListener(() =>
+            {
+                mCount++;
+                UpdateView();
+            });
         
     }
 
-    // Update is called once per frame
-    void Update()
+		private void UpdateView()
+		{
+			mCounterTxt.text = mCount.ToString();
+		}
+
+		// Update is called once per frame
+		void Update()
     {
         
     }
