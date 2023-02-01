@@ -30,7 +30,12 @@ public class CounterAppController : MonoBehaviour
                 mCount++;
                 UpdateView();
             });
-        
+
+            mBtnSub.onClick.AddListener(() =>
+            {
+                mCount--;
+                UpdateView();
+            });
     }
 
 		private void UpdateView()
