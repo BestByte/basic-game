@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace QFramework.Reinvent { 
 public class CounterAppController : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -15,4 +16,5 @@ public class CounterAppController : MonoBehaviour
     {
         
     }
+}
 }
