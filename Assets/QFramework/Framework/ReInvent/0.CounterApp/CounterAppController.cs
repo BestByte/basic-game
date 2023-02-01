@@ -43,10 +43,6 @@ public class CounterAppController : MonoBehaviour
 			mCounterTxt.text = mCount.ToString();
 		}
 
-		// Update is called once per frame
-		void Update()
-    {
-        
-    }
+		
 }
 }
