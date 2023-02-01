@@ -25,7 +25,8 @@ public class CounterAppController : MonoBehaviour
             mBtnSub=transform.Find("BtnSub").GetComponent<Button>();
             mCounterTxt=transform.Find("CountTxt").GetComponent<Text>();
 
-            mBtnAdd.onClick.AddListener(() =>
+			#region controller
+			mBtnAdd.onClick.AddListener(() =>
             {
                 mCount++;
                 UpdateView();
@@ -36,7 +37,8 @@ public class CounterAppController : MonoBehaviour
                 mCount--;
                 UpdateView();
             });
-    }
+			#endregion
+		}
 
 		private void UpdateView()
 		{
