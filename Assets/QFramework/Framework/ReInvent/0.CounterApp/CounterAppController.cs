@@ -48,3 +48,8 @@ public class CounterAppController : MonoBehaviour
 		
 }
 }
+
+namespace QFramework.MVC
+{
+
+}
