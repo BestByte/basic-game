@@ -51,5 +51,12 @@ public class CounterAppController : MonoBehaviour
 
 namespace QFramework.MVC
 {
+    using QFramework;
+
+    public class CounterAppModel:AbstractModel
+    {
+        public int Count;
+
+    }
 
 }
