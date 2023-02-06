@@ -78,9 +78,13 @@ namespace QFramework.MVC
 	#region Controller
 	public class CounterAppController : MonoBehaviour, IController
 	{
+		/// <summary>
+		/// // 3.Ö¸¶¨¼Ü¹¹
+		/// </summary>
+		/// <returns></returns>
 		public IArchitecture GetArchitecture()
 		{
-			
+			return CounterApp.Interface;
 		}
 	}
 	#endregion
