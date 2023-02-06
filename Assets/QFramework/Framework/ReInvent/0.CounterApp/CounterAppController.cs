@@ -78,6 +78,12 @@ namespace QFramework.MVC
 	#region Controller
 	public class CounterAppController : MonoBehaviour, IController
 	{
+		// View
+		private Button mBtnAdd;
+		private Button mBtnSub;
+		private Text mCountText;
+		// 4. Model
+		private CounterAppModel mModel;
 		/// <summary>
 		/// // 3.指定架构
 		/// </summary>
@@ -85,6 +91,40 @@ namespace QFramework.MVC
 		public IArchitecture GetArchitecture()
 		{
 			return CounterApp.Interface;
+		}
+
+		void Start()
+		{
+			// 5. 获取模型
+			mModel = this.GetModel<CounterAppModel>();
+
+			mBtnAdd = transform.Find("BtnAdd").GetComponent<Button>();
+			mBtnSub = transform.Find("BtnSub").GetComponent<Button>();
+			mCountText = transform.Find("CountTxt").GetComponent<Text>();
+
+			#region controller
+			mBtnAdd.onClick.AddListener(() =>
+			{
+				mModel.Count++;
+				UpdateView();
+			});
+
+			mBtnSub.onClick.AddListener(() =>
+			{
+				mModel.Count--;
+				UpdateView();
+			});
+			#endregion
+		}
+
+		private void UpdateView()
+		{
+			mCountText.text = mModel.Count.ToString();
+		}
+
+		private void OnDestroy()
+		{
+			mModel=null;
 		}
 	}
 	#endregion
