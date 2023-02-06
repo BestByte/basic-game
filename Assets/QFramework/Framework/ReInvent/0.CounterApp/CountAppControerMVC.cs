@@ -86,4 +86,19 @@ namespace QFramework.MVC
 		}
 	}
 	#endregion
+	/// <summary>
+	/// ÒýÈë Command
+	/// </summary>
+	public class IncreaseCountCommand : AbstractCommand
+	{
+		protected override void OnExecute()
+		{
+			this.GetModel<CounterAppModel>().Count++;
+		}
+	}
+
+	public class DecreaseCountCommand : AbstractCommand { protected override void OnExecute()
+		{
+			this.GetModel<CounterAppModel>().Count--;
+		} }
 }
