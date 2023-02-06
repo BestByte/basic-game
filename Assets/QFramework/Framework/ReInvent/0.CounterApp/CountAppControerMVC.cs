@@ -63,13 +63,13 @@ namespace QFramework.MVC
 			#region controller
 			mBtnAdd.onClick.AddListener(() =>
 			{
-				mModel.Count++;
+				this.SendCommand<IncreaseCountCommand>();
 				UpdateView();
 			});
 
 			mBtnSub.onClick.AddListener(() =>
 			{
-				mModel.Count--;
+				this.SendCommand<DecreaseCountCommand>();
 				UpdateView();
 			});
 			#endregion
