@@ -63,6 +63,7 @@ namespace QFramework.MVC
 			#region controller
 			mBtnAdd.onClick.AddListener(() =>
 			{
+				// ½»»¥Âß¼­
 				this.SendCommand<IncreaseCountCommand>();
 				UpdateView();
 			});
