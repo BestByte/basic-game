@@ -52,7 +52,9 @@ public class CounterAppController : MonoBehaviour
 namespace QFramework.MVC
 {
     using QFramework;
-
+	/// <summary>
+	/// Architecture 用于管理模块，或者说 Architecture 提供一整套架构的解决方案，而模块管理和提供 MVC 只是其功能的一小部分。
+	/// </summary>
 	#region 1. 定义一个 Model 对象
 	public class CounterAppModel:AbstractModel
     {
