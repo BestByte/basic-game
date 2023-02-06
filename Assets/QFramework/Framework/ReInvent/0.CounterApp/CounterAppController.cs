@@ -80,7 +80,7 @@ namespace QFramework.MVC
 	{
 		public IArchitecture GetArchitecture()
 		{
-			throw new NotImplementedException();
+			
 		}
 	}
 	#endregion
