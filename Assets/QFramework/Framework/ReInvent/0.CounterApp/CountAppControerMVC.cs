@@ -65,14 +65,21 @@ namespace QFramework.MVC
 			{
 				// ½»»¥Âß¼­
 				this.SendCommand<IncreaseCountCommand>();
-				UpdateView();
+				
 			});
-
+         
 			mBtnSub.onClick.AddListener(() =>
 			{
 				this.SendCommand<DecreaseCountCommand>();
-				UpdateView();
+				
 			});
+            UpdateView();
+
+			//×¢²áÊÂ¼þ
+			this.RegisterEvent<CountChangeEvent>(e =>
+			{
+				UpdateView();
+			}).UnRegisterWhenGameObjectDestroyed(gameObject);
 			#endregion
 		}
 
