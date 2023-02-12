@@ -29,7 +29,7 @@ namespace QFramework.MVC
 		}
 		protected override void OnInit()
 		{
-			Count = 0;
+			
 		}
 
 	}
