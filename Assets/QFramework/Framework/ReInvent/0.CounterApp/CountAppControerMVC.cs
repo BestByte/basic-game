@@ -73,7 +73,11 @@ namespace QFramework.MVC
 				this.SendCommand<DecreaseCountCommand>();
 				
 			});
-            UpdateView();
+			//引入事件机制 和 CQRS 原则之后，我们的表现逻辑的代码变少了很多。
+
+			由原来的两次主动调用
+
+			UpdateView();
 
 			 //注册事件
 			this.RegisterEvent<CountChangeEvent>(e =>
