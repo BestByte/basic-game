@@ -95,6 +95,7 @@ namespace QFramework.MVC
 		protected override void OnExecute()
 		{
 			this.GetModel<CounterAppModel>().Count++;
+			this.SendEvent<CountChangeEvent>();
 		}
 	}
 	/// <summary>
@@ -103,6 +104,7 @@ namespace QFramework.MVC
 	public class DecreaseCountCommand : AbstractCommand { protected override void OnExecute()
 		{
 			this.GetModel<CounterAppModel>().Count--;
+			this.SendEvent<CountChangeEvent>();
 		} }
 	/// <summary>
 	/// 定义数据变更事件
