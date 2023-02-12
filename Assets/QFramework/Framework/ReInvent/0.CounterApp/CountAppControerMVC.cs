@@ -162,7 +162,12 @@ namespace QFramework.MVC
 		{
 			PlayerPrefs.SetInt(key, value);
 		}
-
+	/// <summary>
+	/// ÔØÈëintÊı¾İ
+	/// </summary>
+	/// <param name="key"></param>
+	/// <param name="value"></param>
+	/// <returns></returns>
 		public int LoadInt(string key,int value = 0)
 		{
 			return PlayerPrefs.GetInt(key, value);
