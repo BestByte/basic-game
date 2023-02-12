@@ -17,9 +17,16 @@ namespace QFramework.MVC
 		private int mCount;
 		public int Count
 		{
-			get=>mCount;
-			set { } 
-		};
+			get => mCount;
+			set
+			{
+				if (mCount != value)
+				{
+					mCount = value;
+					PlayerPrefs.SetInt(nameof(mCount), mCount);
+				}
+			}
+		}
 		protected override void OnInit()
 		{
 			Count = 0;
