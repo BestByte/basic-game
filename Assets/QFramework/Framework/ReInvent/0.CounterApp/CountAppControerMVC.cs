@@ -162,6 +162,11 @@ namespace QFramework.MVC
 		{
 			PlayerPrefs.SetInt(key, value);
 		}
+
+		public int loadInt(string key,int value = 0)
+		{
+			return PlayerPrefs.GetInt(key, value);
+		}
 	}
 	#endregion
 }
