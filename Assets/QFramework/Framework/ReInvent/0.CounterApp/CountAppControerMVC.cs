@@ -97,7 +97,9 @@ namespace QFramework.MVC
 			this.GetModel<CounterAppModel>().Count++;
 		}
 	}
-
+	/// <summary>
+	///  Command 来帮助 Controller 分担了一部分的交互逻辑。但是表现逻辑的代码目前看起来并不是很智能。
+	/// </summary>
 	public class DecreaseCountCommand : AbstractCommand { protected override void OnExecute()
 		{
 			this.GetModel<CounterAppModel>().Count--;
