@@ -153,4 +153,15 @@ namespace QFramework.MVC
 
 	}
 	#endregion
+
+	#region ∂®“Â utility ≤„
+
+	public class Storage : IUtility
+	{
+		public void SaveInt(string key,int value)
+		{
+			PlayerPrefs.SetInt(key, value);
+		}
+	}
+	#endregion
 }
