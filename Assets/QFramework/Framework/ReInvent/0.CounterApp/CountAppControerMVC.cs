@@ -75,7 +75,7 @@ namespace QFramework.MVC
 			});
             UpdateView();
 
-			//注册事件
+			 //注册事件
 			this.RegisterEvent<CountChangeEvent>(e =>
 			{
 				UpdateView();
