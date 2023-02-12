@@ -34,6 +34,12 @@ namespace QFramework.MVC
 			Count=storage.LoadInt(nameof(Count));
 
 			//可以通过 CounterApp.Interface 监听数据变更事件
+			CounterApp.Interface.RegisterEvent<CountChangeEvent>(
+				e =>
+				{
+					this.GetUtility<Storage>().SaveInt(nameof(Count), Count);
+				});
+
 		}
 
 	}
