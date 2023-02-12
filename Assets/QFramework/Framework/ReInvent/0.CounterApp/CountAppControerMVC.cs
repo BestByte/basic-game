@@ -118,6 +118,10 @@ namespace QFramework.MVC
 		}
 	}
 	#endregion
+
+	#region 引入 Command
+
+	
 	/// <summary>
 	/// 引入 Command
 	/// </summary>
@@ -137,6 +141,10 @@ namespace QFramework.MVC
 			this.GetModel<CounterAppModel>().Count--;
 			this.SendEvent<CountChangeEvent>();
 		} }
+	#endregion
+
+	#region  定义数据变更事件
+	
 	/// <summary>
 	/// 定义数据变更事件
 	/// </summary>
@@ -144,4 +152,5 @@ namespace QFramework.MVC
 	{
 
 	}
+	#endregion
 }
