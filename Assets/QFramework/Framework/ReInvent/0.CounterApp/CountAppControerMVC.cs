@@ -104,4 +104,11 @@ namespace QFramework.MVC
 		{
 			this.GetModel<CounterAppModel>().Count--;
 		} }
+	/// <summary>
+	/// 定义数据变更事件
+	/// </summary>
+	public struct CountChangeEvent
+	{
+
+	}
 }
