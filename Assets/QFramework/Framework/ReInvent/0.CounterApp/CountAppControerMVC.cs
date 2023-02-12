@@ -5,6 +5,7 @@ using UnityEngine;
 namespace QFramework.MVC
 {
 	using QFramework;
+	using QFramework.Example;
 
 	using UnityEngine.UI;
 
@@ -29,7 +30,10 @@ namespace QFramework.MVC
 		}
 		protected override void OnInit()
 		{
-			
+			var storage = this.GetUtility<Storage>();
+			Count=storage.LoadInt(nameof(Count));
+
+			//可以通过 CounterApp.Interface 监听数据变更事件
 		}
 
 	}
