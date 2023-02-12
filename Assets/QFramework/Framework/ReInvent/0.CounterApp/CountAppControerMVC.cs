@@ -14,7 +14,12 @@ namespace QFramework.MVC
 	#region 1. 定义一个 Model 对象
 	public class CounterAppModel : AbstractModel
 	{
-		public int Count;
+		private int mCount;
+		public int Count
+		{
+			get=>mCount;
+			set { } 
+		};
 		protected override void OnInit()
 		{
 			Count = 0;
