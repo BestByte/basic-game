@@ -49,6 +49,7 @@ namespace QFramework.MVC
 	{
 		protected override void Init()
 		{
+			// 注册 Model
 			this.RegisterModel(new CounterAppModel());
 			// 注册存储工具的对象
 			this.RegisterUtility(new  Storage());
