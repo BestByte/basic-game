@@ -56,6 +56,8 @@ namespace QFramework.MVC
 			this.RegisterModel(new CounterAppModel());
 			// 注册存储工具的对象
 			this.RegisterUtility(new  Storage());
+			//注册成就系统
+			this.RegisterSystem(new AchievementSystem());
 		}
 	}
 	#endregion
