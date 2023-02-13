@@ -6,7 +6,6 @@ namespace QFramework.MVC
 {
 	using QFramework;
 	using QFramework.Example;
-
 	using UnityEngine.UI;
 
 	/// <summary>
