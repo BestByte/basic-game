@@ -26,12 +26,10 @@ namespace QFramework.MVC
 			// 设置初始值（不触发事件）
 			Count.SetValueWithoutEvent(storage.LoadInt(nameof(Count)));
 
-			//可以通过 CounterApp.Interface 监听数据变更事件
-			CounterApp.Interface.RegisterEvent<CountChangeEvent>(
-				e =>
-				{
-					this.GetUtility<Storage>().SaveInt(nameof(Count), Count);
-				});
+			Count.Register(newCount =>
+			{
+				storage.SaveInt(nameof(Count), newCount);
+			});
 
 		}
 
