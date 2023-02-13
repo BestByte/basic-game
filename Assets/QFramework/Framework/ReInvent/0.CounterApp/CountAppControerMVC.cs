@@ -181,4 +181,12 @@ namespace QFramework.MVC
 		}
 	}
 	#endregion
+
+	#region ∂®“ÂSystem
+	public class AchievementSystem : AbstractSystem
+	{
+
+	}
+	
+	#endregion
 }
