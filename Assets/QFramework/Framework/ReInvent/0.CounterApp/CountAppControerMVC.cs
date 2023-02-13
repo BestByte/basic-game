@@ -50,6 +50,8 @@ namespace QFramework.MVC
 		protected override void Init()
 		{
 			this.RegisterModel(new CounterAppModel());
+			// 注册存储工具的对象
+			this.RegisterUtility(new  Storage());
 		}
 	}
 	#endregion
