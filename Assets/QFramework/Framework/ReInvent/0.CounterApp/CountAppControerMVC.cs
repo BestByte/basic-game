@@ -185,7 +185,26 @@ namespace QFramework.MVC
 	#region 定义System
 	public class AchievementSystem : AbstractSystem
 	{
-
+		protected override void OnInit()
+		{
+			var model=this.GetModel<CounterAppModel>();
+			this.RegisterEvent<CountChangeEvent>(
+				e =>
+				{
+					if (model.Count == 5)
+					{
+						Debug.Log("触发 点击达人 成就");
+					}
+					else if (model.Count==10)
+					{
+						Debug.Log("触发 点击专家 成就");
+					}
+					else if (model.Count==-5)
+					{
+						Debug.Log("触发 点击菜鸟 成就");
+					}
+				});
+		}
 	}
 	
 	#endregion
