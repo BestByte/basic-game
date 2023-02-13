@@ -83,6 +83,7 @@ namespace QFramework.MVC
 			mCountText = transform.Find("CountTxt").GetComponent<Text>();
 
 			#region controller
+			//¼àÌýÊäÈë
 			mBtnAdd.onClick.AddListener(() =>
 			{
 				// ½»»¥Âß¼­
