@@ -17,19 +17,9 @@ namespace QFramework.MVC
 		/// <summary>
 		/// BindableProperty 是包含 数据 + 数据变更事件 的一个对象。
 		/// </summary>
-		private int mCount;
-		public int Count
-		{
-			get => mCount;
-			set
-			{
-				if (mCount != value)
-				{
-					mCount = value;
-					PlayerPrefs.SetInt(nameof(mCount), mCount);
-				}
-			}
-		}
+
+		public BindableProperty<int> Count { get; } = new BindableProperty<int>();
+		
 		protected override void OnInit()
 		{
 			var storage = this.GetUtility<Storage>();
