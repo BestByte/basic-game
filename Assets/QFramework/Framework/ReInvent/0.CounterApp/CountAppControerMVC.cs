@@ -130,8 +130,8 @@ namespace QFramework.MVC
 	{
 		protected override void OnExecute()
 		{
-			this.GetModel<CounterAppModel>().Count++;
-			this.SendEvent<CountChangeEvent>();
+			var model=this.GetModel<CounterAppModel>();
+			model.Count.Value++;
 		}
 	}
 	/// <summary>
@@ -139,8 +139,8 @@ namespace QFramework.MVC
 	/// </summary>
 	public class DecreaseCountCommand : AbstractCommand { protected override void OnExecute()
 		{
-			this.GetModel<CounterAppModel>().Count--;
-			this.SendEvent<CountChangeEvent>();
+			var model=this.GetModel<CounterAppModel>();
+			model.Count.Value--;
 		} }
 	#endregion
 
