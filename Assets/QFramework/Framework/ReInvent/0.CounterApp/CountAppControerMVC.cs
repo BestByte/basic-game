@@ -154,7 +154,9 @@ namespace QFramework.MVC
 	#endregion
 
 	#region 定义 utility 层
-
+	/// <summary>
+	/// 定义 utility 层
+	/// </summary>
 	public class Storage : IUtility
 	{
 		public void SaveInt(string key,int value)
