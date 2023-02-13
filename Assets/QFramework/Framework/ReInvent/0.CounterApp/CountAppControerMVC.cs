@@ -23,7 +23,8 @@ namespace QFramework.MVC
 		protected override void OnInit()
 		{
 			var storage = this.GetUtility<Storage>();
-			Count=storage.LoadInt(nameof(Count));
+			// 设置初始值（不触发事件）
+			Count.SetValueWithoutEvent(storage.LoadInt(nameof(Count)));
 
 			//可以通过 CounterApp.Interface 监听数据变更事件
 			CounterApp.Interface.RegisterEvent<CountChangeEvent>(
