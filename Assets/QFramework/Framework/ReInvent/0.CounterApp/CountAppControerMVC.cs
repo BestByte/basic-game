@@ -47,6 +47,9 @@ namespace QFramework.MVC
 	#region  2.定义一个架构（提供 MVC、分层、模块管理等）
 	public class CounterApp : Architecture<CounterApp>
 	{
+		/// <summary>
+		/// 架构初始化
+		/// </summary>
 		protected override void Init()
 		{
 			// 注册 Model
