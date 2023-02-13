@@ -14,6 +14,9 @@ namespace QFramework.MVC
 	#region 1. 定义一个 Model 对象
 	public class CounterAppModel : AbstractModel
 	{
+		/// <summary>
+		/// BindableProperty 是包含 数据 + 数据变更事件 的一个对象。
+		/// </summary>
 		private int mCount;
 		public int Count
 		{
