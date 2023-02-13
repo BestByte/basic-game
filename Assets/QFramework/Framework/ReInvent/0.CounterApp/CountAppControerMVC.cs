@@ -26,6 +26,7 @@ namespace QFramework.MVC
 			// 设置初始值（不触发事件）
 			Count.SetValueWithoutEvent(storage.LoadInt(nameof(Count)));
 
+			// 当数据变更时 存储数据
 			Count.Register(newCount =>
 			{
 				storage.SaveInt(nameof(Count), newCount);
