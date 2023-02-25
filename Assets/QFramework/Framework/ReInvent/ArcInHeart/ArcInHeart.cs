@@ -54,6 +54,18 @@ namespace QFramework.ArcinHeart
         public static BindableProperty<int> Counter = new BindableProperty<int> ()
         { Value = 0};
     }
-
 	#endregion
+
+	#region ∂®“Âcommand
+    public struct IncreaseCountCommand : ICommand
+    {
+        public void Execute() { CounterModel.Counter.Value++; }
+    }
+
+    public struct DecreaseCountCommand : ICommand
+    {
+        public void Execute() { CounterModel.Counter.Value--;}
+    }
+	#endregion
+
 }
