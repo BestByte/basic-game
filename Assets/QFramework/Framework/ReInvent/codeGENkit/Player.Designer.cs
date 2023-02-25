@@ -1,4 +1,4 @@
-// Generate Id:09f4e5c2-6221-4ab0-83d2-0e70b1ff2b49
+// Generate Id:006c109c-ef34-49e7-a238-2dd326c3bf64
 using UnityEngine;
 
 // 1.请在菜单 编辑器扩展/Namespace Settings 里设置命名空间
@@ -7,6 +7,10 @@ namespace QFramework.CodeGenKit
 {
 	public partial class Player
 	{
+
+		public Transform Weapon;
+
+		public Transform GroundCheck;
 
 	}
 }

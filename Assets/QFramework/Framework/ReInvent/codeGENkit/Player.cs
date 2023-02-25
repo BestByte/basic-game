@@ -10,6 +10,7 @@ namespace QFramework.CodeGenKit
 		void Start()
 		{
 			// Code Here
+			
 		}
 	}
 }
