@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActionExample : MonoBehaviour
+namespace QFramework.action
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ActionExample : MonoBehaviour
     {
-        
-    }
+        // Start is called before the first frame update
+        void Start()
+        {
+            Debug.Log("start time:"+Time.time);
+            ActionKit.Delay(1.0f, () =>
+            {
+                Debug.Log("end time:" + Time.time);
+            }).Start(this);
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
         
     }
 }
