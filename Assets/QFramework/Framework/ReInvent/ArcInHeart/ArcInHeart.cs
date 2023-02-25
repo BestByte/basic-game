@@ -18,7 +18,18 @@ namespace QFramework.ArcinHeart
         {
 
         }
-    }
+		private void OnGUI()
+		{
+			if (GUILayout.Button("+"))
+			{
+				new IncreaseCountCommand().Execute();
+			}
+			if (GUILayout.Button("-"))
+			{
+				new DecreaseCountCommand().Execute();
+			}
+		}
+	}
 
 	#region ¿ò¼Ü
     public interface ICommand
@@ -67,5 +78,5 @@ namespace QFramework.ArcinHeart
         public void Execute() { CounterModel.Counter.Value--;}
     }
 	#endregion
-
+  
 }
