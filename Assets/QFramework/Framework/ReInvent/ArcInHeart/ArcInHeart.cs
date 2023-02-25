@@ -47,4 +47,13 @@ namespace QFramework.ArcinHeart
         public event Action<T> OnValueChanged = _ => { };
     }
 	#endregion
+
+	#region  ∂®“Âmodel
+    public static class CounterModel
+    {
+        public static BindableProperty<int> Counter = new BindableProperty<int> ()
+        { Value = 0};
+    }
+
+	#endregion
 }
