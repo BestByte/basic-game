@@ -10,7 +10,8 @@ public class ReskitExample : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ResKit.Init();
+			// 项目启动只调用一次即可
+			ResKit.Init();
 
 
     }
