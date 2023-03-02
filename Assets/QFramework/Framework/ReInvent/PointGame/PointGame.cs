@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+
+using QFramework;
+
 using UnityEngine;
 
-public class PointGame : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+namespace PointGame {
+	public class PointGame : Architecture<PointGame>
+	{
+		protected override void Init()
+		{
+			
+		}
+	}
 }
