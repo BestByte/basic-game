@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace QFramework.CountGame
+namespace QFramework.PointGame
 {
     public class GameStartPanel : MonoBehaviour,IController
     {

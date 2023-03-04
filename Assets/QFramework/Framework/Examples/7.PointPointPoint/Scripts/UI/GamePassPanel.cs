@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace QFramework.CountGame
+namespace QFramework.PointGame
 {
     public class GamePassPanel : MonoBehaviour, IController
     {

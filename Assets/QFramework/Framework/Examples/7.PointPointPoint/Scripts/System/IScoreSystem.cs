@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace QFramework.CountGame
+namespace QFramework.PointGame
 {
     public interface IScoreSystem : ISystem
     {
