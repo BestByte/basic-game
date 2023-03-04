@@ -1,4 +1,4 @@
-﻿namespace QFramework.PointGame
+﻿namespace QFramework.CountGame
 {
     public class PointGame : Architecture<PointGame>
     {

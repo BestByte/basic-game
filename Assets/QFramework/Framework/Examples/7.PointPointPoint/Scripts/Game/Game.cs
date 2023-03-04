@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace QFramework.PointGame
+namespace QFramework.CountGame
 {
     public class Game : MonoBehaviour,IController
     {
