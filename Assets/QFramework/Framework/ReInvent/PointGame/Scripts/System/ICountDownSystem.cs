@@ -1,6 +1,6 @@
 using System;
 
-namespace QFramework.PointGame
+namespace CountGame
 {
     public interface ICountDownSystem : ISystem
     {

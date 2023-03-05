@@ -5,7 +5,7 @@ using QFramework;
 
 using UnityEngine;
 
-namespace PointGame {
+namespace CountGame {
 	public class PointGame : Architecture<PointGame>
 	{
 		protected override void Init()

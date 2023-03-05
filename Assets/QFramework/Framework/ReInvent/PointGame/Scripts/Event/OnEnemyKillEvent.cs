@@ -1,4 +1,4 @@
-namespace QFramework.PointGame
+namespace CountGame
 {
     public class OnEnemyKillEvent
     {

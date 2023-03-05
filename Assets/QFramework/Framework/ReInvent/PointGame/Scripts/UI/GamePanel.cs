@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace QFramework.PointGame
+namespace CountGame   
 {
     public class GamePanel : MonoBehaviour, IController
     {

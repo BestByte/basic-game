@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace QFramework.CountGame
+namespace CountGame
 {
     public interface IStorage : IUtility
     {
