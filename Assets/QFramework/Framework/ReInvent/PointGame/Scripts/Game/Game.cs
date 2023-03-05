@@ -8,11 +8,7 @@ namespace CountGame
         {
             this.RegisterEvent<GameStartEvent>(OnGameStart);
             
-            this.RegisterEvent<OnCountDownEndEvent>(e => { transform.Find("Enemies").gameObject.SetActive(false); })
-                .UnRegisterWhenGameObjectDestroyed(gameObject);
-
-            this.RegisterEvent<GamePassEvent>(e => { transform.Find("Enemies").gameObject.SetActive(false); })
-                .UnRegisterWhenGameObjectDestroyed(gameObject);
+          
         }
         
         private void OnGameStart(GameStartEvent e)
