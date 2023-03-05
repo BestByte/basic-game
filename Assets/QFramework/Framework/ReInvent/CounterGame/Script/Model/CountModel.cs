@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class CountModel : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+using QFramework;
+namespace CountGame { 
+    public interface ICountModel : IModel
     {
-        
+        BindableProperty<int> Count { get; }
     }
+	public class CountModel : AbstractModel, ICountModel
+	{
+		public BindableProperty<int> Count { get; } =new BindableProperty<int>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+		protected override void OnInit()
+		{
+			
+		}
+	}
+
+
 }
