@@ -1,17 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Storage : MonoBehaviour
+using QFramework;
+namespace CountGame
 {
-    // Start is called before the first frame update
-    void Start()
+    public interface IStorage : IUtility
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    }
+    public class Storage : IStorage
     {
         
     }
