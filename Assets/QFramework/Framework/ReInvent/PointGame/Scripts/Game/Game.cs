@@ -2,6 +2,9 @@ using UnityEngine;
 using QFramework;
 namespace CountGame
 {
+    /// <summary>
+    /// controller
+    /// </summary>
     public class Game : MonoBehaviour,IController
     {
         private void Awake()
@@ -13,14 +16,7 @@ namespace CountGame
         
         private void OnGameStart(GameStartEvent e)
         {
-            var enemyRoot = transform.Find("Enemies");
-          
-            enemyRoot.gameObject.SetActive(true);
-
-            foreach (Transform childTrans in enemyRoot)
-            {
-                childTrans.gameObject.SetActive(true);
-            }
+           
         }
 
         private void OnDestroy()
