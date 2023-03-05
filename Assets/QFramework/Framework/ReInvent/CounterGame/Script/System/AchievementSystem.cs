@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QFramework;
+namespace CountGame { 
 
-public class AchievementSystem : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public interface IAchievementSystem:ISystem { 
+	}
+	public class AchievementSystem : AbstractSystem, IAchievementSystem
+	{
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+         protected override void OnInit()
+		{
+			
+		}
+	}
 }
