@@ -12,7 +12,7 @@ namespace CountGame
             //注册system
 
             //注册model
-            this.RegisterModel<IGameModel>(new GameModel());
+           
             //注册utility
             
         }
