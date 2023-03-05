@@ -1,4 +1,4 @@
-﻿namespace QFramework.CountGame
+﻿namespace QFramework.PointGame
 {
     public class StartGameCommand : AbstractCommand
     {

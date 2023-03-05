@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace QFramework.CountGame
+namespace QFramework.PointGame
 {
     public interface IAchievementSystem : ISystem
     {
