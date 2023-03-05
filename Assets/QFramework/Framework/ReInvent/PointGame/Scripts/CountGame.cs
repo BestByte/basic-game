@@ -9,6 +9,12 @@ namespace CountGame
         {
            
 
+            //注册system
+
+            //注册model
+
+            //注册utility
+            
         }
     }
 }
