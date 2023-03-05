@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IncreaseCountCommand : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+using QFramework;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+namespace CountGame {
+	public class IncreaseCountCommand : AbstractCommand
+	{
+		protected override void OnExecute()
+		{
+			
+		}
+	}
 }

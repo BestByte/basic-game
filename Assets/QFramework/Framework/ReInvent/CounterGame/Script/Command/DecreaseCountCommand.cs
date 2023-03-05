@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QFramework;
+ namespace CountGame {
 
-public class DecreaseCountCommand : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public class DecreaseCountCommand : AbstractCommand
+	{
+		protected override void OnExecute()
+		{
+			throw new System.NotImplementedException();
+		}
+	}
 }
