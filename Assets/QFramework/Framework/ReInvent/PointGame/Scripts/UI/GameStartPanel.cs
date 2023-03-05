@@ -61,8 +61,7 @@ namespace CountGame
 
         private void OnDestroy()
         {
-            mGameModel.Gold.UnRegister(OnGoldValueChanged);
-            mGameModel.Life.UnRegister(OnLifeValueChanged);
+           
             mGameModel = null;
         }
 
