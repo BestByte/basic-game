@@ -1,5 +1,6 @@
 ﻿namespace CountGame
 {
+    using QFramework;
     public interface IGameModel : IModel
     {
         BindableProperty<int> KillCount { get; }

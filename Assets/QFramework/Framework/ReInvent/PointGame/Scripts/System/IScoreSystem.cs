@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using QFramework;
 namespace CountGame
 {
     public interface IScoreSystem : ISystem

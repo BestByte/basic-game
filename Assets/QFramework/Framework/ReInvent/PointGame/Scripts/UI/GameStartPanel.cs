@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using QFramework;
 namespace CountGame
 {
     public class GameStartPanel : MonoBehaviour,IController
@@ -68,7 +68,7 @@ namespace CountGame
 
         IArchitecture IBelongToArchitecture.GetArchitecture()
         {
-            return PointGame.Interface;
+            return CountGame.Interface;
         }
     }
 }

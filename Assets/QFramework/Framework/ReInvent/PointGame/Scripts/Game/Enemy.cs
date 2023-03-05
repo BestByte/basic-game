@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+using QFramework;
 namespace CountGame
 {
     public class Enemy : MonoBehaviour,IController
@@ -14,7 +15,7 @@ namespace CountGame
 
         IArchitecture IBelongToArchitecture.GetArchitecture()
         {
-            return PointGame.Interface;
+            return CountGame.Interface;
         }
     }
 }

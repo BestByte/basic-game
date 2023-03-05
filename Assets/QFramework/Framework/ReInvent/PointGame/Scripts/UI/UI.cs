@@ -2,6 +2,7 @@
 
 namespace CountGame
 {
+    using QFramework;
     public class UI : MonoBehaviour,IController
     {
         void Start()
@@ -28,7 +29,7 @@ namespace CountGame
 
         public IArchitecture GetArchitecture()
         {
-            return PointGame.Interface;
+            return CountGame.Interface;
         }
     }
 }

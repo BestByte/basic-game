@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using QFramework;
 namespace CountGame
 {
     public class ErrorArea : MonoBehaviour,IController
@@ -11,7 +11,7 @@ namespace CountGame
 
         public IArchitecture GetArchitecture()
         {
-            return PointGame.Interface;
+            return CountGame.Interface;
         }
     }
 }

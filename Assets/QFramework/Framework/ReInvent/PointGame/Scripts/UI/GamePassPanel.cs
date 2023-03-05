@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-
+using QFramework;
 namespace CountGame
 {
     public class GamePassPanel : MonoBehaviour, IController
@@ -23,7 +23,7 @@ namespace CountGame
 
         public IArchitecture GetArchitecture()
         {
-            return PointGame.Interface;
+            return CountGame.Interface;
         }
     }
 }

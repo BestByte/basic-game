@@ -1,5 +1,6 @@
 using System;
 
+using QFramework;
 namespace CountGame
 {
     public interface ICountDownSystem : ISystem

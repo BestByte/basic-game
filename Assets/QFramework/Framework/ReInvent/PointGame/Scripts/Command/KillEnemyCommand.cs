@@ -1,5 +1,6 @@
 ﻿namespace CountGame
 {
+    using QFramework;
     public class KillEnemyCommand : AbstractCommand
     {
         protected override void OnExecute()

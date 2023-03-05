@@ -1,5 +1,6 @@
 namespace CountGame
 {
+    using QFramework;
     public class MissCommand : AbstractCommand
     {
         protected override void OnExecute()
