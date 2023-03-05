@@ -5,7 +5,7 @@ namespace CountGame
 {
     public class GamePanel : MonoBehaviour, IController
     {
-        private ICountDownSystem mCountDownSystem;
+       
         private IGameModel mGameModel;
 
         private void Awake()
@@ -18,7 +18,7 @@ namespace CountGame
 
             // 第一次需要调用一下
           
-            OnScoreValueChanged(mGameModel.Score.Value);
+           // OnScoreValueChanged(mGameModel.Score.Value);
         }
 
        
@@ -36,9 +36,9 @@ namespace CountGame
         private void OnDestroy()
         {
            
-            mGameModel.Score.UnRegister(OnScoreValueChanged);
+           
             mGameModel = null;
-            mCountDownSystem = null;
+           
         }
 
         public IArchitecture GetArchitecture()

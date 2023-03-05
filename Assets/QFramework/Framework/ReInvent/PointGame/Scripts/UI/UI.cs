@@ -7,15 +7,12 @@ namespace CountGame
     {
         void Start()
         {
-            this.RegisterEvent<GamePassEvent>(OnGamePass);
+          
             
            
         }
 
-        private void OnGamePass(GamePassEvent e)
-        {
-           
-        }
+       
 
         void OnDestroy()
         {

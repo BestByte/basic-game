@@ -19,23 +19,15 @@ namespace CountGame
                     this.SendCommand<StartGameCommand>();
                 });
             
-            transform.Find("BtnBuyLife").GetComponent<Button>()
-                .onClick.AddListener(() =>
-                {
-                  
-                    this.SendCommand<BuyLifeCommand>();
-                });
-            
+           
             mGameModel = this.GetModel<IGameModel>();
 
-            mGameModel.Gold.Register(OnGoldValueChanged);
-            mGameModel.Life.Register(OnLifeValueChanged);
+           
           
             // 第一次需要调用一下
-            OnGoldValueChanged(mGameModel.Gold.Value);
-            OnLifeValueChanged(mGameModel.Life.Value);
+           
 
-            transform.Find("BestScoreText").GetComponent<Text>().text = "最高分:" + mGameModel.BestScore.Value;
+          
         }
         
         private void OnLifeValueChanged(int life)
