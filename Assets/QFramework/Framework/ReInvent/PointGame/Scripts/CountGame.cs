@@ -7,12 +7,12 @@ namespace CountGame
     {
         protected override void Init()
         {
-           
+
 
             //注册system
 
             //注册model
-
+            this.RegisterModel<IGameModel>(new GameModel());
             //注册utility
             
         }
