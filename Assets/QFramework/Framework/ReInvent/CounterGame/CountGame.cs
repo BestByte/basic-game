@@ -18,5 +18,13 @@ namespace CountGame
 
 			this.RegisterUtility<IStorage>(new  Storage ());
 		}
+		/// <summary>
+		/// execute command 
+		/// </summary>
+		/// <param name="command"></param>
+		protected override void ExecuteCommand(ICommand command)
+		{
+			base.ExecuteCommand(command);
+		}
 	}
 }
