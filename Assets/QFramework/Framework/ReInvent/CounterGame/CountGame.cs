@@ -10,6 +10,7 @@ namespace CountGame
 
 
 			//×¢²ásystem
+			this.RegisterSystem<IAchievementSystem>(new AchievementSystem());
 
 			//×¢²ámodel
 
