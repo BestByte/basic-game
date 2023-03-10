@@ -7,6 +7,7 @@ using QFramework;
 namespace CountGame {
 	public class IncreaseCountCommand : AbstractCommand
 	{
+
 		protected override void OnExecute()
 		{
 			
