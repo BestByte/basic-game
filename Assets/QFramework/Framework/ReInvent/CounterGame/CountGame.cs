@@ -16,6 +16,7 @@ namespace CountGame
 			this.RegisterModel<ICountModel >(new CountModel());
 			//×¢²áutility
 
+			this.RegisterUtility<IStorage>(new  Storage ());
 		}
 	}
 }
