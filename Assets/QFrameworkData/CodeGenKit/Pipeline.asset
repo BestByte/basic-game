@@ -18,18 +18,29 @@ MonoBehaviour:
     GameObject: {fileID: 0}
     From: 0
     NameToFullName: []
-    BindInfos: []
-    ScriptsFolder: Assets/QFramework/Framework/ReInvent/ResKit
-    ClassName: AssetObj
-    Namespace: QFramework.Example
+    BindInfos:
+    - TypeName: UnityEngine.UI.Button
+      PathToRoot: ButtonAdd
+      MemberName: ButtonAdd
+    - TypeName: UnityEngine.UI.Button
+      PathToRoot: ButtonSub
+      MemberName: ButtonSub
+    - TypeName: UnityEngine.UI.Text
+      PathToRoot: 'CountText '
+      MemberName: 'CountText '
+    ScriptsFolder: Assets/QFramework/Framework/ReInvent/CounterGame/Script/ViewController
+    ClassName: Canvas
+    Namespace: 'CountGame '
     MainCode: "using UnityEngine;\r\nusing QFramework;\r\n\r\n// 1.\u8BF7\u5728\u83DC\u5355
       \u7F16\u8F91\u5668\u6269\u5C55/Namespace Settings \u91CC\u8BBE\u7F6E\u547D\u540D\u7A7A\u95F4\r\n//
       2.\u547D\u540D\u7A7A\u95F4\u66F4\u6539\u540E\uFF0C\u751F\u6210\u4EE3\u7801\u4E4B\u540E\uFF0C\u9700\u8981\u628A\u903B\u8F91\u4EE3\u7801\u6587\u4EF6\uFF08\u975E
       Designer\uFF09\u7684\u547D\u540D\u7A7A\u95F4\u624B\u52A8\u66F4\u6539\r\nnamespace
-      QFramework.Example\r\n{\r\n\tpublic partial class AssetObj : ViewController\r\n\t{\r\n\t\tvoid
+      CountGame \r\n{\r\n\tpublic partial class Canvas : ViewController\r\n\t{\r\n\t\tvoid
       Start()\r\n\t\t{\r\n\t\t\t// Code Here\r\n\t\t}\r\n\t}\r\n}\r\n"
-    DesignerCode: "// Generate Id:856cc65e-5738-4044-ad14-9ea332a9a047\r\nusing UnityEngine;\r\n\r\n//
+    DesignerCode: "// Generate Id:63355169-ffda-41ed-a40e-9eca381f8a2c\r\nusing UnityEngine;\r\n\r\n//
       1.\u8BF7\u5728\u83DC\u5355 \u7F16\u8F91\u5668\u6269\u5C55/Namespace Settings
       \u91CC\u8BBE\u7F6E\u547D\u540D\u7A7A\u95F4\r\n// 2.\u547D\u540D\u7A7A\u95F4\u66F4\u6539\u540E\uFF0C\u751F\u6210\u4EE3\u7801\u4E4B\u540E\uFF0C\u9700\u8981\u628A\u903B\u8F91\u4EE3\u7801\u6587\u4EF6\uFF08\u975E
       Designer\uFF09\u7684\u547D\u540D\u7A7A\u95F4\u624B\u52A8\u66F4\u6539\r\nnamespace
-      QFramework.Example\r\n{\r\n\tpublic partial class AssetObj\r\n\t{\r\n\r\n\t}\r\n}\r\n"
+      CountGame \r\n{\r\n\tpublic partial class Canvas\r\n\t{\r\n\r\n\t\tpublic UnityEngine.UI.Button
+      ButtonAdd;\r\n\r\n\t\tpublic UnityEngine.UI.Button ButtonSub;\r\n\r\n\t\tpublic
+      UnityEngine.UI.Text CountText ;\r\n\r\n\t}\r\n}\r\n"
