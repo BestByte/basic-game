@@ -10,6 +10,15 @@ namespace CountGame {
 
 		protected override void OnExecute()
 		{
+			var model=this.GetModel<ICountModel>();
+			model.Count.Value++;
+
+			if (model.Count == 5)
+			{ Debug.Log("触发 点击达人 成就"); }
+			else if (model.Count == 10)
+			{
+				Debug.Log("触发 点击专家就");
+			}
 			
 		}
 	}
