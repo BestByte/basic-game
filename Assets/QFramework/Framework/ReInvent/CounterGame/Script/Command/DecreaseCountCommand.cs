@@ -9,7 +9,7 @@ using QFramework;
 	{
 		protected override void OnExecute()
 		{
-			throw new System.NotImplementedException();
+			this.GetModel<ICountModel>().Count.Value--;
 		}
 	}
 }
