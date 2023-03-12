@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using QFramework;
+using Unity.VisualScripting;
+
 namespace CountGame
 {
     public interface IStorage : IUtility
@@ -13,12 +15,12 @@ namespace CountGame
 	{
 		public int LoadInt(string key, int defaultvalue = 0)
 		{
-			throw new System.NotImplementedException();
+			return PlayerPrefs.GetInt(key, defaultvalue);
 		}
 
 		public void SaveInt(string key, int value)
 		{
-			throw new System.NotImplementedException();
+			PlayerPrefs.SetInt(key, value);
 		}
 	}
 }
