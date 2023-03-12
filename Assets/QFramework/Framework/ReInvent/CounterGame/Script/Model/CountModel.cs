@@ -16,7 +16,8 @@ namespace CountGame {
 
 		protected override void OnInit()
 		{
-			
+
+			Count.SetValueWithoutEvent(0);
 		}
 	}
 

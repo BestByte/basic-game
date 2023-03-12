@@ -26,7 +26,9 @@ namespace CountGame
 		// Start is called before the first frame update
 		void Start()
         {
-			mCountText = this.transform.Find("CountText").GetComponent<Text>();
+			mCountModel=this.GetComponent<ICountModel>();
+
+			mCountText = this.transform.Find("CountText ").GetComponent<Text>();
 			mBtnAdd = this.transform.Find("ButtonAdd").GetComponent<Button>();
             mBtnSub=this.transform.Find("ButtonSub").GetComponent <Button>();
           
@@ -55,11 +57,7 @@ namespace CountGame
 			mCountText.text=mCountModel.Count.ToString();
 		}
 
-		// Update is called once per frame
-		void Update()
-        {
-
-        }
+		
     }
 
 }
