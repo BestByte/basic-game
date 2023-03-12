@@ -17,6 +17,8 @@ namespace CountGame
 
 
 		private ICountModel mCountModel;
+
+
 		public IArchitecture GetArchitecture()
 		{
             return CountGame.Interface;
