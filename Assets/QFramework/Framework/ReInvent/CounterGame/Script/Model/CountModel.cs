@@ -18,6 +18,12 @@ namespace CountGame {
 		{
 
 			var storage =this .GetUtility <IStorage>();
+			Count.SetValueWithoutEvent(storage.LoadInt(nameof(Count)));
+
+			Count .Register(newcount=>
+			{
+				storage.SaveInt(nameof(Count),newcount);
+			});
 
 		}
 	}

@@ -57,7 +57,11 @@ namespace CountGame
 			mCountText.text=mCountModel.Count.ToString();
 		}
 
-		
-    }
+		private void OnDestroy()
+		{
+			mCountModel = null;
+		}
+
+	}
 
 }
