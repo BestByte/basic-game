@@ -6,10 +6,19 @@ namespace CountGame
 {
     public interface IStorage : IUtility
     {
+        void  SaveInt (int key ,int  value );
+        int LoadInt(string key, int defaultvalue = 0);
+    }
+	public class Storage : IStorage
+	{
+		public int LoadInt(string key, int defaultvalue = 0)
+		{
+			throw new System.NotImplementedException();
+		}
 
-    }
-    public class Storage : IStorage
-    {
-        
-    }
+		public void SaveInt(int key, int value)
+		{
+			throw new System.NotImplementedException();
+		}
+	}
 }

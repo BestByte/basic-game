@@ -17,7 +17,8 @@ namespace CountGame {
 		protected override void OnInit()
 		{
 
-			Count.SetValueWithoutEvent(0);
+			var storage =this .GetUtility <IStorage>();
+
 		}
 	}
 
