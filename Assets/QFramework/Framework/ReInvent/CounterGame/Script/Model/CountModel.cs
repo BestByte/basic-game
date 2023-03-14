@@ -12,7 +12,9 @@ namespace CountGame {
 		/// <summary>
 		/// count
 		/// </summary>
-		public BindableProperty<int> Count { get; } =new BindableProperty<int>();
+		public BindableProperty<int> Count { get; } = new BindableProperty<int>()
+			{
+		Value=0};
 
 		protected override void OnInit()
 		{
