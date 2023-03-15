@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QFramework;
 
-public class PointModel : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+namespace Point { 
+
+    public interface IGameModel : IModel
     {
-        
+        BindableProperty<int> Score { get; }
     }
+	public class PointModel : AbstractModel, IGameModel
+	{
+		public BindableProperty<int> Score { get; } =new BindableProperty<int>()
+		{
+			Value = 0
+		};
+
+		protected override void OnInit()
+		{
+			
+		}
+	}
+
 }
