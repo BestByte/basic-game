@@ -8,6 +8,7 @@ namespace Point {
 		protected override void Init()
 		{
 			
+
 		}
 	}
 }
