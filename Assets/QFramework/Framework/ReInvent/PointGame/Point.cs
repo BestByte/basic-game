@@ -9,6 +9,9 @@ namespace Point {
 		{
 			
 
+
+
+			this.RegisterUtility<IStorage>(new PlayerPrefsStorage());
 		}
 	}
 }
