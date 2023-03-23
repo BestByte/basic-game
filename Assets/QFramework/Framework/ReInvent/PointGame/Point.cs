@@ -10,7 +10,6 @@ namespace Point {
 		protected override void Init()
 		{
 
-
 			this.RegisterModel<IGameModel>(new PointModel());
 
 			this.RegisterUtility<IStorage>(new PlayerPrefsStorage());
