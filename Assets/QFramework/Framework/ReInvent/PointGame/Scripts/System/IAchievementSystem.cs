@@ -9,5 +9,11 @@ public interface IAchievementSystem : ISystem
 {
    
 }
-
+	public class AchievementSystem : AbstractSystem, IAchievementSystem
+	{
+		protected override void OnInit()
+		{
+			
+		}
+	}
 }
