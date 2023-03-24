@@ -13,6 +13,8 @@ namespace Point {
 			this.RegisterModel<IGameModel>(new PointModel());
 
 			this.RegisterUtility<IStorage>(new PlayerPrefsStorage());
+
+			this.RegisterSystem<IAchievementSystem>(new AchievementSystem());
 		}
 	}
 }
