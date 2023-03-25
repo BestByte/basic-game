@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Game : MonoBehaviour
+using QFramework;
+namespace Point { 
+	/// <summary>
+	/// controller 
+	/// </summary>
+public class Game : MonoBehaviour,IController
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+		public IArchitecture GetArchitecture()
+		{
+			return Point.Interface; 
+		}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+		
+		private void OnGameStart(GameStartEvent gameStartEvent)
+		{
+
+		}
+
+		private void Awake()
+		{
+			//register  event 
+			this.RegisterEvent<GameStartEvent>(OnGameStart);
+		}
+	}
 }
