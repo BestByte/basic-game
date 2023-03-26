@@ -1,18 +1,14 @@
+using QFramework;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class GameStartPanel : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+namespace Point {
+	public class GameStartPanel : MonoBehaviour, IController
+	{
+		public IArchitecture GetArchitecture()
+		{
+			return Point.Interface;
+		}
+	}
 }
