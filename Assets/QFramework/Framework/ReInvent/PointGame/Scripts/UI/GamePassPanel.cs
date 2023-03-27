@@ -1,8 +1,10 @@
+using QFramework;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class GamePassPanel : MonoBehaviour
+namespace Point { 
+public class GamePassPanel : MonoBehaviour,IController
 {
     // Start is called before the first frame update
     void Start()
@@ -15,4 +17,5 @@ public class GamePassPanel : MonoBehaviour
     {
         
     }
+}
 }
