@@ -6,16 +6,12 @@ using UnityEngine;
 namespace Point { 
 public class GamePassPanel : MonoBehaviour,IController
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+		public IArchitecture GetArchitecture()
+		{
+			return Point.Interface;
+		}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+		
+	
 }
 }
